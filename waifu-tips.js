@@ -32,7 +32,7 @@ function loadWidget(config) {
 			<div id="waifu-tips"></div>
 			<canvas id="live2d" width="800" height="800"></canvas>
 			<div id="waifu-tool">
-			<span class="fa fa-lg fa-comment"></span>
+			        <span class="fa fa-lg fa-comment"    style="display: none;"></span>
 				<span class="fa fa-lg fa-paper-plane" style="display: none;"></span>
 				<span class="fa fa-lg fa-user-circle" style="display: none;"></span>
 				<span class="fa fa-lg fa-street-view" style="display: none;"></span>
