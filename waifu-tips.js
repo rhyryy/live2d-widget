@@ -13,6 +13,7 @@ function loadWidget(config) {
 	if (!apiPath.endsWith("/")) apiPath += "/";
 	localStorage.removeItem("waifu-display");
 	sessionStorage.removeItem("waifu-text");
+	if (screen.width >= 768) {
 	document.body.insertAdjacentHTML("beforeend", `<div id="waifu">
 			<div id="waifu-tips"></div>
 			<canvas id="live2d" width="800" height="800"></canvas>
@@ -26,6 +27,14 @@ function loadWidget(config) {
 				<span class="fa fa-lg fa-times"></span>
 			</div>
 		</div>`);
+		}else{
+			document.body.insertAdjacentHTML("beforeend", `<div id="waifu">
+			<div id="waifu-tips"></div>
+			<canvas id="live2d" width="800" height="800"></canvas>
+			<div id="waifu-tool">
+			</div>
+		</div>`);
+		}
 	// https://stackoverflow.com/questions/24148403/trigger-css-transition-on-appended-element
 	setTimeout(() => {
 		document.getElementById("waifu").style.bottom = 0;
