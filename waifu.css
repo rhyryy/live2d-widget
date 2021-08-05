@@ -81,7 +81,10 @@
       #waifu #live2d {
 	height: 140px;
 	width: 140px;
-}
+        }
+	#waifu-tips {
+	width: 100px;
+        }
 }
 	
 #waifu #live2d:active {
